@@ -8,7 +8,7 @@ chrome.runtime.onMessage.addListener(
           console.log('Applying mask');
           // uncheck all blogs
           let checkboxes = document.getElementById('profile-div').querySelectorAll("input[type='checkbox']");
-          let blogs = ['1','8', '114', '127']; // nieuwshonk, inbeeld, widgets, bvhw
+          let blogs = ['1','8', '114', '127'];
           checkboxes.forEach(function(i) {
             blogs.indexOf(i.value) > -1 ? i.checked = true : i.checked = false;
           });
