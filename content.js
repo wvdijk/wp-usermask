@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener(
             blogs.indexOf(i.value) > -1 ? i.checked = true : i.checked = false;
           });
           document.getElementById('role').value = 'editor';
-          document.getElementById('rich_editing').checked = false;
+          document.getElementById('rich_editing').checked = true;
         } else {
           return;
         }
